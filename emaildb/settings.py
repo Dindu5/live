@@ -47,7 +47,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
 
     'whitenoise.middleware.WhiteNoiseMiddleware',
-    
+
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -84,15 +84,18 @@ WSGI_APPLICATION = 'emaildb.wsgi.application'
 
 DATABASES = {
      'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'newdb',
-        'USER': 'root',
-        'PASSWORD': 'Dindu2580',
-        'PORT': '3306',
-        'HOST': '127.0.0.1',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd1uup9h7vt6esk',
+        'USER': 'atyiigrrfysegn',
+        'PASSWORD': '7fb72f63c97447205dd2df5ed115b6091dc69b50231a97067ea3fe4e66589857',
+        'PORT': '5432',
+        'HOST': 'ec2-18-235-109-97.compute-1.amazonaws.com',
     }
 }
 
+import dj_database_url
+db_from_env = dj_database_url.config(conn_max_age=600)
+DATABASES['default'].update(db_from_env)
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
