@@ -307,7 +307,7 @@ h1.main-text {
 	max-width: 100% !important;
 }
 .second-img-container {
-	width: 30%;
+	width: 50%;
 	margin: auto;
 }
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -1061,5 +1061,8 @@ h1.main-text {
 	}
 	.alert-dismissible {
 		padding-right: 1rem;
+	}
+	.second-img-container {
+		width: 80%;
 	}
 }
