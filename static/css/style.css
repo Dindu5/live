@@ -560,6 +560,9 @@ h1.main-text {
 	font-weight: 600;
 	color: var(--white);
 }
+.footer-te {
+	margin-bottom: 0px !important;
+}
 
 /* ================================================= */
 /* ================= RESPONSIVE VIEWS ================ */
@@ -631,7 +634,7 @@ h1.main-text {
 		width: 65%;
 	}
 	.img-cover {
-		width: 60%;
+		width: 90%;
 	}
 	.cancel {
 		font-size: 30px !important;
@@ -789,7 +792,7 @@ h1.main-text {
 		width: 60%;
 	}
 	.img-cover {
-		width: 70%;
+		width: 90%;
 	}
 
 	/* ======= SUBSCRIPTION SECTION ====== */
@@ -953,7 +956,7 @@ h1.main-text {
 		bottom: 0;
 	}
 	.img-cover {
-		width: 55%;
+		width: 85%;
 	}
 	.cancel {
 		font-size: 20px !important;
