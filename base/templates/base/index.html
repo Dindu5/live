@@ -447,7 +447,7 @@
             Be one of the very first to use this awesome app.
         </p>
         <form id="form" method="POST">
-            <!--{% csrf_token %}-->
+            {% csrf_token %}
             
             <div id="inputBox">
                 {{form.email}}
