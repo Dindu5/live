@@ -1054,4 +1054,12 @@ h1.main-text {
 	.footer-logo-text {
 		font-size: 1rem;
 	}
+	.alert {
+		max-width: fit-content !important;
+		border-radius: 0 !important;
+		border: none;
+	}
+	.alert-dismissible {
+		padding-right: 1rem;
+	}
 }

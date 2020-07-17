@@ -176,7 +176,7 @@ gsap.from('#myImg1', {
 	},
 	opacity: 0,
 	x: -500,
-	duration: 3
+	duration: 1
 });
 
 gsap.from('#myImg', {
@@ -186,7 +186,7 @@ gsap.from('#myImg', {
 	},
 	opacity: 0,
 	x: 500,
-	duration: 3
+	duration: 1
 });
 gsap.from('#myImg2', {
 	scrollTrigger: {
@@ -195,7 +195,7 @@ gsap.from('#myImg2', {
 	},
 	opacity: 0,
 	x: 500,
-	duration: 3
+	duration: 1
 });
 gsap.from('#myImg3', {
 	scrollTrigger: {
@@ -204,7 +204,7 @@ gsap.from('#myImg3', {
 	},
 	opacity: 0,
 	x: -500,
-	duration: 3
+	duration: 1
 });
 gsap.from('#myImg4', {
 	scrollTrigger: {
@@ -213,7 +213,7 @@ gsap.from('#myImg4', {
 	},
 	opacity: 0,
 	x: 500,
-	duration: 3
+	duration: 1
 });
 gsap.from('#myImg5', {
 	scrollTrigger: {
@@ -222,7 +222,7 @@ gsap.from('#myImg5', {
 	},
 	opacity: 0,
 	x: -500,
-	duration: 3
+	duration: 1
 });
 
 window.addEventListener('load', function() {
@@ -231,35 +231,35 @@ window.addEventListener('load', function() {
 		y: '10%',
 		opacity: 0,
 		scale: 0,
-		duration: 3
+		duration: 1
 	});
 	gsap.from('.header-img', {
 		x: 500,
 		opacity: 0,
 		scale: 0,
-		duration: 3
+		duration: 1
 	});
 	gsap.from('.navigation', {
 		y: -200,
 		opacity: 0,
-		duration: 3
+		duration: 1
 	}),
 		gsap.from('.main-text', {
 			x: -500,
 			opacity: 0,
-			duration: 3,
+			duration: 1,
 			delay: 2
 		}),
 		gsap.from('.sub-text', {
 			x: -500,
 			opacity: 0,
-			duration: 3,
+			duration: 1,
 			delay: 2
 		}),
 		gsap.from('.notify', {
 			y: 50,
 			opacity: 0,
-			duration: 3,
-			delay: 3
+			duration: 1,
+			delay: 2
 		});
 });

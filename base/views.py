@@ -14,16 +14,13 @@ def home(request):
    
     form = SubscribtionForm()
 
-    
-
     if request.method == 'POST':
         # print('Printing Post:', request.POST)
 
         form = SubscribtionForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.success(request, 'You have successfully subscribed, a confirmation mail will be sent to you shortly')
-            
+            messages.success(request, 'You have successfully subscribed, a confirmation mail will be sent to you shortly') 
             form = SubscribtionForm()
         
 
