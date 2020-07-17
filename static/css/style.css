@@ -107,7 +107,11 @@ body {
 		opacity: 0;
 	}
 }
-
+.carousel-indicators li,
+.carousel-control-prev,
+.carousel-control-next {
+	display: none !important;
+}
 /* ====== font-family: 'Cormorant', serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Quicksand', sans-serif;
