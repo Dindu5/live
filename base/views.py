@@ -5,9 +5,9 @@ from django.contrib import messages
 
 from django.conf import settings
 from django.template.loader import render_to_string
-from django.core.mail import send_mail
 
-from emaildb.settings import EMAIL_HOST_USER
+
+
 
 
 def home(request):
