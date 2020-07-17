@@ -4,20 +4,446 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email - Reception</title>
+    <title>GlowLook - Official</title>
+
+    <!-- Link to Bootstrap CDN -->
+
+    <!-- Link to Box Icon CDN CDN -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Link Google Fonts -->
     {% load static %}
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant&family=Montserrat&family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static '/css/style.css' %}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
 </head>
 <body>
-    <div>
+    
+    <div class="loader d-flex justify-content-center align-contents-center align-items-center flex-column">
+        <div class="lds-dual-ring"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="navigation">
+            <div class="d-flex align-items-center">
+                <div class="logo">
+                    <img src="{% static 'images/Logo Shapes 12.png' %}" alt="">
+                </div>
+                <h3 class="logo-text ml-2">GlowSkin</h3>
+            </div>
+            <div>
+                
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row d-flex main-landing justify-items-center align-items-center">
+                <div class="col-sm-4 my-1">
+                    <div>
+                        <h1 class="main-text">
+                            Look awesome and feel better with a healthy skin
+                        </h1>
+                        <h5 class="sub-text">
+                            Every one's dream is to have a perfect skin and glow. Glow look is an application that helps you manage your
+                             skin and your looks and general.
+                        </h5>
+            
+                        <a href="#subscribe" class="notify position-relative">Notify Me</a>
+                    </div>
+                </div>
+                <div class="col-sm-8 my-1 d-flex justify-content-center align-content-center">
+                    <div class="header-img">
+                        <img src="{% staic 'images/1594981002880.png' %}" alt="">
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End of Header -->
+
+
+    <!--Transform Section -->
+
+    <section id="transform">
+        <h3 class="text-center head-text">Watch Yourself Transform</h3>
+        <div class="container-fluid">
+            <div class="lds-ripple position-absolute z-index-n1 mr-auto ml-auto"><div></div><div></div></div>
+            <div class="row d-flex justify-items-center align-items-center">
+                <div class="col-sm-6 my-1 distortion">
+                    <div class="img-box distortion">
+                        <img src="{% static 'images/20200714_182554 1.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 my-1">
+                    <p class="transform-text">
+                        Glow look app is a skin care application that is designed to assist you manage 
+                        your skin and looks to bring our that Queenly glow in you. It provides you with the best skin care routine and products perfect for your skin type and definitely improves your skin in no distant time. And tht’s not all! Glow skin app reccomends 
+                        the best outfit to suit your activity for the day leaving you feeling like a QUEEN! 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+
+    <!-- End of Transform Section -->
+
+
+    <!-- Workings Section -->
+
+    <section id="working">
+        <h3 class="text-center head-text">Heres How it Works</h3>
+        <div class="container-fluid my-3">
+            <div class="row d-flex justify-items-center align-items-center working-row">
+                <div class="col-sm-6 box-in-right d-flex my-1 position-relative justify-content-center">
+                    <div class="box-in">
+                        <h3 class="working-text">FingerPrint Authentication</h3>
+                        <p class="paragraph-text">
+                            With a simple login and fingerprint scan, Glow Look anylyses your current
+                            skin conditions within seconds. Our built in state of the art algorithms will 
+                            know all there is to know about your skin.
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="col-sm-6 my-1 d-flex justify-content-center align-content-center">
+                    <div class="img-cover">
+                        <img id="myImg" src="{% static 'images/Screenshot.png' %}" alt="Finger Print Authentication" style="width:100%;">
+                    </div>
+
+                    <!-- The Modal -->
+                    <div id="mypopModal" class="mode">
+
+                        <!-- The Close Button -->
+                        <span class="cancel">&times;</span>
+                        
+                        <!-- Modal Content (The Image) -->
+                        <div class="second-img-container">
+                            <img class="mode-content" id="img01">
+                        </div>
+                        
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="cap"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row reversal d-flex justify-items-center align-items-center working-row">
+                <div class="col-sm-6 my-1 d-flex justify-content-center align-content-center">
+                    <div class="img-cover">
+                        <img id="myImg1" src="{% static 'images/skinanalysis.png' %}" alt="Skin Status Analysis" style="width:100%;">
+                    </div>
+                    
+                    <!-- The Modal -->
+                    <div id="mypopModal1" class="mode">
+
+                        <!-- The Close Button -->
+                        <span class="cancel">&times;</span>
+                        <div class="second-img-container">
+                            <!-- Modal Content (The Image) -->
+                            <img class="mode-content" id="img02">
+                        </div>
+                        
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="cap1"></div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 box-in-left d-flex my-1 position-relative justify-content-center">
+                    <div class="box-in">
+                        <h3 class="working-text">Skin Status Analysis</h3>
+                        <p class="paragraph-text">
+                            Even the tinnest detail of your skin is not left out. Glow look gives accurate analysis and also provides you with 
+                            natural beaty tips.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-items-center align-items-center working-row">
+                <div class="col-sm-6 box-in-right d-flex my-1 position-relative justify-content-center">
+                    <div class="box-in">
+                        <h3 class="working-text">Daily Skin Care Routine</h3>
+                        <p class="paragraph-text">
+                            GlowLook app draws  out a perfect daily skin care routine for your skin based on the nature and condition of your skin
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 my-1 d-flex justify-content-center align-content-center">
+                    <div class="img-cover">
+                        <img id="myImg2" src="{% static 'images/routine.png' %}" alt="Yep Another" style="width:100%;">
+                    </div>
+                    
+
+                    <!-- The Modal -->
+                    <div id="mypopModal2" class="mode">
+
+                        <!-- The Close Button -->
+                        <span class="cancel">&times;</span>
+                        <div class="second-img-container">
+                            <!-- Modal Content (The Image) -->
+                            <img class="mode-content" id="img03">
+                        </div>
+
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="cap2"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row reversal d-flex justify-items-center align-items-center working-row">
+                <div class="col-sm-6 my-1 d-flex justify-content-center align-content-center">
+                    <div class="img-cover">
+                        <img id="myImg3" src="{% static 'images/products.png' %}" alt="Yep Another" style="width:100%;">
+                    </div>
+                    
+
+                    <!-- The Modal -->
+                    <div id="mypopModal3" class="mode">
+
+                        <!-- The Close Button -->
+                        <span class="cancel">&times;</span>
+
+                        <div class="second-img-container">
+                            <!-- Modal Content (The Image) -->
+                            <img class="mode-content" id="img04">
+
+                        </div>
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="cap3"></div>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-6 box-in-left d-flex my-1 position-relative justify-content-center">
+                    <div class="box-in">
+                        <h3 class="working-text">Skin Care Products</h3>
+                        <p class="paragraph-text">
+                            Did you think that was all?!
+                            You get the perfect products for your skin without having to consultant a Dermatologist
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="row d-flex justify-items-center align-items-center working-row justify-content-center">
+                <div class="col-sm-6 box-in-right d-flex my-1 position-relative justify-content-center">
+                    <div class="box-in">
+                        <h3 class="working-text">Todays Outfit</h3>
+                        <p class="paragraph-text">
+                            You need not worry about the makeup that suits your skin nor the 
+                            outfit to go with. Glowlook has got you covered even as far as your accessories.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 my-1 d-flex justify-content-center align-content-center">
+                    <div class="img-cover">
+                        <img id="myImg4" src="{% static 'images/outfit.png' %}" alt="Todays Outfit" style="width:100%;">
+                    </div>
+                    
+
+                    <!-- The Modal -->
+                    <div id="mypopModal4" class="mode">
+
+                        <!-- The Close Button -->
+                        <span class="cancel">&times;</span>
+                        <div class="second-img-container">
+                            <!-- Modal Content (The Image) -->
+                            <img class="mode-content" id="img05">
+                        </div>
+
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="cap4"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row reversal d-flex justify-items-center align-items-center working-row">
+                <div class="col-sm-6 my-1 d-flex justify-content-center align-content-center justify-content-center">
+                    <div class="img-cover">
+                        <img id="myImg5" src="{% static 'images/features.png' %}" alt="Manage Other Features" style="width:100%;">
+                    </div>
+                    
+
+                    <!-- The Modal -->
+                    <div id="mypopModal5" class="mode">
+
+                        <!-- The Close Button -->
+                        <span class="cancel">&times;</span>
+                        <div class="second-img-container">
+                            <!-- Modal Content (The Image) -->
+                            <img class="mode-content" id="img06">
+                        </div>
+
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="cap5"></div>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-6 box-in-left d-flex my-1 position-relative justify-content-center">
+                    <div class="box-in">
+                        <h3 class="working-text">Other Features</h3>
+                        <p class="paragraph-text">
+                            That’s not all! you get to access other cool to assist you in navigating
+                            the app and make the most of it!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- END OF SECTION -->
+
+
+
+    <!-- SUBSCRIBTION SECTION -->
+
+    <section id="subscribe">
+        <h3 class="text-center head-text">Get Notified</h3>
+        <div class="container-fluid">
+            <div class="row text-center subscription-text w-75 m-auto">
+                    Be one of the first to use this exciting app.
+                    What to get notified on app realease? 
+                    Just give us your email address and will let you know when its deployed
+                </p>
+            </div>
+            <div class="center mt-2">
+                <div id="clock">
+
+                </div>
+            </div>
+            <form id="form" method="POST">
+                {% csrf_token %}
+                
+                <div id="inputBox">
+                    {{form.email}}
+                </div>
+                
+                {% if messages %}
+                <ul class="messages">
+                    {% for message in messages %}
+                    
+                        <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                <span class="sr-only">Close</span>
+                            </button>
+                            <strong>{{ message }}</strong>
+                        </div>
+                    
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                
+                <span id="text"></span>
+                <input type="submit" value="Notify Me" class="submitButton">
+            </form>
+        </div>
+
+    </section>
+
+
+
+    <!-- END OF SUBSCRIPTION SECTION -->
+
+    <!-- FEATURES SECTION -->
+    <section id="features">
+        <h3 class="text-center head-text">Cool Features</h3>
+        <div class="row text-center sub-row w-75 m-auto">
+            <p class="text-center subscription-text">
+                Be one of the first to use this exciting app.
+                What to get notified on app realease? 
+                Just give us your email address and will let you know when its deployed
+            </p>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 col-sm-6 my-4">
+                    <div class="feature-box">
+                        <h3>
+                            <i class='bx bx-fingerprint'></i>
+                        </h3>
+                        <h4 class="feature-heading text-center">
+                            Fingerprint Scan
+                        </h4>
+                        <p class="feature-paragraph text-center">
+                            Glow Look has a fingerprint scan and authentication feature 
+                            that is unique to you and stored in your database.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 my-4">
+                    <div class="feature-box">
+                        <h3>
+                            <i class='bx bxs-bar-chart-alt-2'></i>
+                        </h3>
+                        <h4 class="feature-heading text-center">
+                            Progress Report
+                        </h4>
+                        <p class="feature-paragraph text-center">
+                            Want a regural report on how you've improved? We got you covered!
+                            Glow Look calculates how well your skin has improved on a weekly, monthly and quarterly basis.
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="col-lg-3 col-md-6 col-sm-6 my-4">
+                    <div class="feature-box">
+                        <h3>
+                            <i class='bx bxs-bell-ring' ></i>
+                        </h3>
+                        <h4 class="feature-heading text-center">
+                            Notification
+                        </h4>
+                        <p class="feature-paragraph text-center">
+                            Another impresive feature of Glow look is its ability to 
+                            enable you customize notifications that are sent to you.
+                        </p>
+                    </div> 
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 my-4">
+                    <div class="feature-box">
+                        <h3>
+                            <i class='bx bxs-user-voice'></i>
+                        </h3>
+                        <h4 class="feature-heading text-center">
+                            Live Sessions
+                        </h4>
+                        <p class="feature-paragraph text-center">
+                            Glow Look allows you to book live sessions with skin therapy experts.
+                            Glow look authomatically links you to an expert whenever you want.
+                        </p>
+
+                    </div>
+                </div>
+                
+    
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer id="footer">
+        <p class="text-center subscription-text">
+            Be one of the very first to use this awesome app.
+        </p>
         <form id="form" method="POST">
-            {% csrf_token %}
-            <h3>Get Notified on app release</h3>
-            <div class="inputBox">
+            <!--{% csrf_token %}-->
+            
+            <div id="inputBox">
                 {{form.email}}
             </div>
+            
             {% if messages %}
             <ul class="messages">
                 {% for message in messages %}
@@ -29,17 +455,41 @@
                         </button>
                         <strong>{{ message }}</strong>
                     </div>
-                
                 {% endfor %}
             </ul>
             {% endif %}
+            
             <span id="text"></span>
             <input type="submit" value="Notify Me" class="submitButton">
         </form>
-    </div>
+        <div class="d-flex justify-content-between mt-2">
+            <div class="d-flex align-items-center">
+                <div class="footer-logo">
+                    <img src="{% static 'images/Logo Shapes 12.png' %}" alt="">
+                </div>
+                <h3 class="footer-logo-text ml-2">GlowSkin</h3>
+            </div>
+            <div class="social d-flex pull-right">
+                <p class="paragraph-text">All rights reserved | GlowLook</p>
+            </div>
+
+        </div>
+        
+
+    </footer>
+
+
+
+
+
+    <!--Bootstrap JS Files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/ScrollTrigger.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="{% static '/js/script.js' %}"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="j{% '/js/countdown.js' %}"></script>
+    <script src="{% static '/js/scripts.js' %}"></script>
+    <script src="{% static '/js/hover-effect.umd.js' %}"></script>
 </body>
 </html>

@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'base'
+    'base',
 ]
 
 MIDDLEWARE = [
@@ -148,11 +148,5 @@ MESSAGES_TAGS = {
     messages.ERROR: 'alert-danger'
 }
 
-#SMTP Configuration
-EMAIL_BACKEND = 'django.core.mail.backend.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'dindu696@gmail.com'
-EMAIL_HOST_PASSWORD = 'ThisIsDindu2580'
+
 
